@@ -1,4 +1,4 @@
-def call(String project, String ImageTag, String hubUser){
+def call(){
     withCredentials([usernamePassword(
             credentialsId: "jfrog",
             usernameVariable: "USER",
