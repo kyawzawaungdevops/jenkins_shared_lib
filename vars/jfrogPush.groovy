@@ -7,7 +7,7 @@ def call(){
         sh "jfrog rt config --interactive=false --url="https://your-artifactory-url" --user=$USER --password=$PASS --interactive=false"
     }
     //sh "docker image push ${hubUser}/${project}:${ImageTag}"
-    sh "jfrog rt u "/var/lib/jenkins/workspace/Jenkins-pipeline-project/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar" "your-repository-in-jfrog/" --recursive=true"   
+    sh "jfrog rt u "/var/lib/jenkins/workspace/Jenkins-pipeline-project/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar" "test" --recursive=true"   
 }
 
 
